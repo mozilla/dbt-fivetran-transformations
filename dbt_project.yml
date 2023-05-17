@@ -1,0 +1,25 @@
+name: 'dbt_fivetran_transformations'
+version: '0.2.0'
+config-version: 2
+require-dbt-version: [">=1.3.0", "<2.0.0"]
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'dbt_fivetran_transformations'
+
+# These configurations specify where dbt should look for different types of files.
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"  # directory which will store compiled SQL files
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+# Configuring models, docs: https://docs.getdbt.com/docs/configuring-models
+models:
+  apple_search_ads:
+    +schema: apple_search_ads

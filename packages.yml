@@ -1,0 +1,3 @@
+packages:
+  - package: fivetran/apple_search_ads  # source: https://github.com/fivetran/dbt_apple_search_ads
+    version: [">=0.2.0", "<0.3.0"]

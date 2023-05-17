@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: garlic_bucktooth
+    tables:
+      - name: ad_group_history
+      - name: ad_group_report
+      - name: ad_history
+      - name: ad_level_report
+      - name: campaign_history
+      - name: campaign_report
+      - name: country_or_region_history
+      - name: creative_history
+      - name: creative_set_report
+      - name: keyword_history
+      - name: keyword_report
+      - name: negative_keyword_history
+      - name: organization
+      - name: product_page_history
+      - name: product_page_locale
+      - name: search_term_report
+      - name: targeting_dimensions_history

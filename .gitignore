@@ -1,0 +1,7 @@
+# python virtual environment
+venv/
+
+# dbt arfifacts
+target/
+dbt_packages/
+logs/
